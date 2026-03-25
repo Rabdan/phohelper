@@ -2,7 +2,7 @@ import postgres from "postgres"; // eslint-disable-line @typescript-eslint/no-re
 
 const connectionString =
   process.env.DATABASE_URL ||
-  "postgresql://postgres:postgres@localhost:5433/phomenu";
+  "postgresql://postgres:postgres@localhost:5432/phomenu";
 export const sql = postgres(connectionString, { max: 10 });
 
 export async function getOrCreateUser(

@@ -2,7 +2,7 @@ import postgres from "postgres";
 
 const connectionString =
   process.env.DATABASE_URL ||
-  "postgresql://postgres:postgres@postgres:5433/phomenu";
+  "postgresql://postgres:postgres@postgres:5432/phomenu";
 export const sql = postgres(connectionString, { max: 10 });
 
 export async function getUsers(limit = 100) {

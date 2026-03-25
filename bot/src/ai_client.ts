@@ -24,11 +24,11 @@ interface AIResponse {
 
 const MODELS = {
   intent:
-    "google/gemini-2.0-flash-001, google/gemini-2.0-flash-lite-preview-02-05:free, anthropic/claude-3-haiku:free",
+    "google/gemini-2.0-flash-001, google/gemini-2.0-flash-lite-preview-02-05:free, anthropic/claude-3-haiku:free, openrouter/free",
   vision:
     "openai/gpt-4o, google/gemini-2.0-flash-001, google/gemini-2.0-flash-lite-preview-02-05:free",
-  chat: "anthropic/claude-3-haiku, google/gemini-2.0-flash-001, google/gemini-2.0-flash-lite-preview-02-05:free",
-  rag: "google/gemini-2.0-flash-001, google/gemma-3-4b-it:free, google/gemini-2.0-flash-lite-preview-02-05:free",
+  chat: "anthropic/claude-3-haiku, google/gemini-2.0-flash-001, google/gemini-2.0-flash-lite-preview-02-05:free, openrouter/free",
+  rag: "google/gemini-2.0-flash-001, google/gemma-3-4b-it:free, google/gemini-2.0-flash-lite-preview-02-05:free, openrouter/free",
 };
 
 const MAX_RETRIES = 2;

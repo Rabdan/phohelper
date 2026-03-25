@@ -1,0 +1,15 @@
+{
+	"/": [],
+	"/api/dishes": [
+		"src/routes/api/dishes/+server.ts"
+	],
+	"/api/phrases": [
+		"src/routes/api/phrases/+server.ts"
+	],
+	"/api/users": [
+		"src/routes/api/users/+server.ts"
+	],
+	"/dishes": [],
+	"/phrases": [],
+	"/users": []
+}

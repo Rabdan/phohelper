@@ -1,0 +1,22 @@
+{
+  "name": "@phomenu/bot",
+  "version": "2.0.0",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "dev": "tsx watch src/index.ts",
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "@grammyjs/auto-retry": "^2.0.1",
+    "@grammyjs/menu": "^1.1.1",
+    "grammy": "^1.21.1",
+    "postgres": "^3.4.8",
+    "yaml": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.0"
+  }
+}

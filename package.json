@@ -1,0 +1,10 @@
+{
+  "name": "phomenu",
+  "version": "2.0.0",
+  "private": true,
+  "scripts": {
+    "dev:bot": "cd bot && npm run dev",
+    "dev:admin": "cd admin && npm run dev",
+    "install:all": "cd bot && npm install && cd ../admin && npm install"
+  }
+}

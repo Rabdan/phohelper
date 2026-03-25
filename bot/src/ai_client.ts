@@ -346,7 +346,7 @@ Generate dish info in EXACT JSON format:
     "ru": ["арахис"],
     "en": ["peanuts"]
   },
-  "search_tags": "cơm,bò",
+  "search_tags": ["cơm", "bò"],
   "spice_level": 1-5,
   "price_range": "150-300 VND",
   "image_urls": ["https://example.com/dish.jpg"]

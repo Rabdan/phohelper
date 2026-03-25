@@ -245,7 +245,7 @@ export async function analyzePhoto(
         type: "text",
         text: `Identify any Vietnamese dishes in this image. You are an expert on Vietnamese cuisine and dishes. You can identify a dish from a photo, regardless of lighting or angle. If you can't identify a dish, suggest similar dishes.
         If this is a menu with multiple dishes, return a list of dish names in Vietnamese of 2 or more words. If this is a single dish, return the name of this dish in Vietnamese of 2 or more words. If this is not Vietnamese food, return an empty list.
-        In the description, display what you see in the language.
+        In the description, display what you see in the current language.
         Answer ONLY in JSON format: {"list": ["dish1", "dish2"], "description": "what you see", "is_menu": true/false}`,
       },
     ];
@@ -321,7 +321,7 @@ export async function generateWikiDish(nameVi: string): Promise<{
           2. Tone: Write the "description" from the perspective of an enthusiastic gourmet traveler who has just discovered this dish in a hidden alley of Hanoi or Saigon. Use evocative, sensory language (aroma, texture, visual appeal).
           3. Warnings: Include a "warnings" section within the description or as a separate key. Mention specific properties: high spice levels, presence of common allergens (peanuts, shellfish), strong scents (shrimp paste, durian), or high fat content.
           4. Completeness: Ensure the ingredients list is authentic to the original Vietnamese recipe.
-          5. Search Tags: Include a "search_tags" key with a comma-separated list of keywords that describe this dish well.
+          5. Search Tags: Include a "search_tags" key with a list of keywords that describe this dish well, Vietnamese words.
           6. Price Range: Include a "price_range" key with the price range of this dish in Vietnamese currency.
 Generate dish info in EXACT JSON format:
 {
@@ -358,6 +358,7 @@ RULES:
 - allergens: JSON with language keys, VALUE is array of allergen strings
 - spice_level: INTEGER 1-5 (1=not spicy, 5=very spicy)
 - price_range: string like "150-300 RUB"
+- search_tags: array of search tags or empty array
 - image_urls: array of image URLs or empty array`,
         },
         {
